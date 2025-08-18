@@ -1,4 +1,4 @@
-# Deep Research – Step 1: Comprehensive Reference Report Generation
+# Deep Research Comprehensive Reference Report Generation
 
 ## Objective and Scope
 
