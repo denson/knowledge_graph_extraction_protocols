@@ -1,0 +1,37 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "OpenAlex API",
+    "version": "1.0.0",
+    "description": "Literature discovery for protocol design."
+  },
+  "servers": [{ "url": "https://api.openalex.org" }],
+  "paths": {
+    "/works": {
+      "get": {
+        "operationId": "searchWorks",
+        "summary": "Search works",
+        "parameters": [
+          { "name": "search", "in": "query", "schema": { "type": "string" } },
+          { "name": "filter", "in": "query", "schema": { "type": "string" } },
+          { "name": "sort", "in": "query", "schema": { "type": "string", "default": "cited_by_count:desc" } },
+          { "name": "per-page", "in": "query", "schema": { "type": "integer", "default": 25, "maximum": 200 } },
+          { "name": "page", "in": "query", "schema": { "type": "integer", "default": 1 } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/works/{id}": {
+      "get": {
+        "operationId": "getWork",
+        "summary": "Get a single work",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    }
+  }
+}
+
+
