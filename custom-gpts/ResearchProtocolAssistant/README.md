@@ -16,6 +16,8 @@ Repository hygiene
 - Keep sensitive data out of the repo.
 
 Suggested knowledge to upload from this repo
+- `Deep_Research_Comprehensive_Reference_Report_Generation.md`
+- `deep_research_protocol_guide_script.md`
 - `Deep_Research_SIO_JSON-LD_Ontology_Extractor.md`
 - Selected graphs from `graphs/` relevant to target domains.
 

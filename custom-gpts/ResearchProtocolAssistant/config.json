@@ -1,7 +1,7 @@
 {
   "name": "Research Protocol Assistant",
   "slug": "research-protocol-assistant",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Designs, critiques, and iterates research protocols, with optional JSON-LD/SIO outputs.",
   "tags": ["research", "protocols", "knowledge-graphs", "json-ld", "SIO"],
   "owner": "your-org-or-username",
