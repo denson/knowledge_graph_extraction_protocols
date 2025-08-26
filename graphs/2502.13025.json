@@ -1,0 +1,323 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "prov": "http://www.w3.org/ns/prov#",
+    "label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/impact-resistant-materials",
+      "label": "Impact-Resistant Materials",
+      "type": "Material",
+      "domain": "core",
+      "description": "Materials optimized for high energy absorption and dissipation:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}.",
+      "relationships": [
+        {
+          "relation": "influences",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/infrastructure-resilience",
+          "evidence": ":contentReference[oaicite:2]{index=2}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/infrastructure-resilience",
+      "label": "Infrastructure Resilience",
+      "type": "Concept",
+      "domain": "core",
+      "description": "Resilience of infrastructure systems to impact events:contentReference[oaicite:3]{index=3}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/self-healing-materials",
+      "label": "Self-Healing Materials",
+      "type": "Material",
+      "domain": "core",
+      "description": "Materials that autonomously repair damage, improving durability:contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}.",
+      "relationships": [
+        {
+          "relation": "participatesIn",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/pollutant-degradation",
+          "evidence": ":contentReference[oaicite:6]{index=6}"
+        },
+        {
+          "relation": "componentOf",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/environmental-self-healing-systems",
+          "evidence": ":contentReference[oaicite:7]{index=7}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/machine-learning-algorithms",
+      "label": "Machine Learning Algorithms",
+      "type": "Process",
+      "domain": "core",
+      "description": "AI/ML techniques for optimizing materials and processes:contentReference[oaicite:8]{index=8}.",
+      "relationships": [
+        {
+          "relation": "optimizes",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/self-healing-materials",
+          "evidence": ":contentReference[oaicite:9]{index=9}"
+        },
+        {
+          "relation": "usedIn",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/damage-forecasting-systems",
+          "evidence": ":contentReference[oaicite:10]{index=10}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/damage-forecasting-systems",
+      "label": "Damage Forecasting Systems",
+      "type": "System",
+      "domain": "core",
+      "description": "Systems combining ML and materials to predict structural damage:contentReference[oaicite:11]{index=11}.",
+      "relationships": [
+        {
+          "relation": "hasComponent",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/machine-learning-algorithms",
+          "evidence": ":contentReference[oaicite:12]{index=12}"
+        },
+        {
+          "relation": "hasComponent",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/impact-resistant-materials",
+          "evidence": ":contentReference[oaicite:13]{index=13}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/biodegradable-microplastic-materials",
+      "label": "Biodegradable Microplastic Materials",
+      "type": "Material",
+      "domain": "core",
+      "description": "Biodegradable polymers used in pollution remediation:contentReference[oaicite:14]{index=14}:contentReference[oaicite:15]{index=15}.",
+      "relationships": [
+        {
+          "relation": "involvedIn",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/pollutant-degradation",
+          "evidence": ":contentReference[oaicite:16]{index=16}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/pollution-mitigation",
+      "label": "Pollution Mitigation",
+      "type": "Process",
+      "domain": "core",
+      "description": "Processes for reducing environmental contaminants:contentReference[oaicite:17]{index=17}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/ai-predictive-modeling",
+      "label": "AI-driven Predictive Modeling",
+      "type": "Process",
+      "domain": "core",
+      "description": "Using AI to predict material behavior and optimize design:contentReference[oaicite:18]{index=18}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/bames-paradigm",
+      "label": "BAMES Paradigm (Bio-Inspired, Adaptive Materials for Resilient Ecosystems)",
+      "type": "Concept",
+      "domain": "core",
+      "description": "Framework integrating bio-inspired and self-healing materials with AI for sustainability:contentReference[oaicite:19]{index=19}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/eco-cycle-framework",
+      "label": "EcoCycle Framework",
+      "type": "Concept",
+      "domain": "core",
+      "description": "Framework for sustainable, self-healing, AI-optimized infrastructure solutions:contentReference[oaicite:20]{index=20}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/environmental-self-healing-systems",
+      "label": "Environmental Self-Healing Systems",
+      "type": "System",
+      "domain": "core",
+      "description": "Systems combining self-healing materials and pollution mitigation:contentReference[oaicite:21]{index=21}.",
+      "relationships": [
+        {
+          "relation": "components",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/self-healing-materials",
+          "evidence": ":contentReference[oaicite:22]{index=22}"
+        },
+        {
+          "relation": "components",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/pollution-mitigation",
+          "evidence": ":contentReference[oaicite:23]{index=23}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/microorganisms",
+      "label": "Microorganisms",
+      "type": "Organism",
+      "domain": "core",
+      "description": "Living organisms used for pollutant degradation:contentReference[oaicite:24]{index=24}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/pollutant-degradation",
+      "label": "Pollutant Degradation",
+      "type": "Process",
+      "domain": "core",
+      "description": "Biological or chemical breakdown of pollutants:contentReference[oaicite:25]{index=25}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/self-healing-microcapsules",
+      "label": "Self-Healing Microcapsules",
+      "type": "Material",
+      "domain": "core",
+      "description": "Microcapsules containing healing agents for autonomous repair:contentReference[oaicite:26]{index=26}.",
+      "relationships": [
+        {
+          "relation": "contains",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/polymerizable-agent",
+          "evidence": ":contentReference[oaicite:27]{index=27}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/polymerizable-agent",
+      "label": "Polymerizable Agent",
+      "type": "Chemical",
+      "domain": "core",
+      "description": "Monomers that polymerize to heal cracks:contentReference[oaicite:28]{index=28}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/carbon-nanotube-reinforced-composite",
+      "label": "Carbon Nanotube Reinforced Composite",
+      "type": "Material",
+      "domain": "core",
+      "description": "Composite with CNTs for enhanced strength and toughness:contentReference[oaicite:29]{index=29}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/graphene-strain-sensors",
+      "label": "Graphene Strain Sensors",
+      "type": "Instrument",
+      "domain": "core",
+      "description": "Graphene-based sensors for real-time strain monitoring:contentReference[oaicite:30]{index=30}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/pvdf-strain-sensors",
+      "label": "PVDF Strain Sensors",
+      "type": "Instrument",
+      "domain": "core",
+      "description": "PVDF polymer sensors for real-time strain monitoring:contentReference[oaicite:31]{index=31}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/adaptive-machine-learning-algorithm",
+      "label": "Adaptive Machine Learning Algorithm",
+      "type": "Process",
+      "domain": "core",
+      "description": "ML algorithm that adaptively regulates material behavior:contentReference[oaicite:32]{index=32}.",
+      "relationships": [
+        {
+          "relation": "regulates",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/stress-distribution",
+          "evidence": ":contentReference[oaicite:33]{index=33}"
+        },
+        {
+          "relation": "regulates",
+          "target": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/healing-response",
+          "evidence": ":contentReference[oaicite:34]{index=34}"
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/stress-distribution",
+      "label": "Stress Distribution",
+      "type": "Concept",
+      "domain": "core",
+      "description": "Pattern of mechanical stress in a material under load:contentReference[oaicite:35]{index=35}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/healing-response",
+      "label": "Healing Response",
+      "type": "Process",
+      "domain": "core",
+      "description": "Autonomous repair action triggered by damage:contentReference[oaicite:36]{index=36}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/impact-event",
+      "label": "Impact Event",
+      "type": "Process",
+      "domain": "core",
+      "description": "Event causing structural stress to materials (impact):contentReference[oaicite:37]{index=37}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/material-performance-feedback",
+      "label": "Material Performance Feedback",
+      "type": "Concept",
+      "domain": "core",
+      "description": "Feedback of material behavior used to refine design:contentReference[oaicite:38]{index=38}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/localized-reinforcement-zones",
+      "label": "Localized Reinforcement Zones",
+      "type": "Property",
+      "domain": "core",
+      "description": "Regions of increased strength formed during repeated impacts:contentReference[oaicite:39]{index=39}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/energy-dissipation-efficiency",
+      "label": "Energy Dissipation Efficiency",
+      "type": "Property",
+      "domain": "core",
+      "description": "Measure of how effectively impact energy is absorbed:contentReference[oaicite:40]{index=40}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/self-improving-feedback",
+      "label": "Self-Improving Feedback",
+      "type": "Property",
+      "domain": "core",
+      "description": "Feedback loops that enhance material adaptation over time:contentReference[oaicite:41]{index=41}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/microstructural-evolution",
+      "label": "Microstructural Evolution",
+      "type": "Property",
+      "domain": "core",
+      "description": "Change in material microstructure improving properties:contentReference[oaicite:42]{index=42}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/shape-memory-alloys",
+      "label": "Shape Memory Alloys",
+      "type": "Material",
+      "domain": "obo",
+      "description": "Alloys that recover their shape in response to external stimuli:contentReference[oaicite:43]{index=43}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/polymers",
+      "label": "Polymers",
+      "type": "Material",
+      "domain": "obo",
+      "description": "Macromolecular materials used in composites and self-healing matrices:contentReference[oaicite:44]{index=44}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/graphene-material",
+      "label": "Graphene",
+      "type": "Material",
+      "domain": "obo",
+      "description": "Two-dimensional carbon material for ultra-high strength:contentReference[oaicite:45]{index=45}."
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/agentic-deep-graph-reasoning/nanomaterials",
+      "label": "Nanomaterials",
+      "type": "Material",
+      "domain": "obo",
+      "description": "Nanoscale materials used to enhance strength and self-healing:contentReference[oaicite:46]{index=46}."
+    }
+  ],
+  "axioms_local": [
+    "impact-resistant-materials rdfs:subClassOf sio:MaterialEntity",
+    "self-healing-materials rdfs:subClassOf sio:MaterialEntity",
+    "environmental-self-healing-systems rdfs:subClassOf sio:System",
+    "damage-forecasting-systems rdfs:subClassOf sio:System",
+    "polymers rdfs:subClassOf sio:MaterialEntity",
+    "graphene-material rdfs:subClassOf sio:MaterialEntity",
+    "nanomaterials rdfs:subClassOf sio:MaterialEntity",
+    "microorganisms rdfs:subClassOf sio:BiologicalEntity"
+  ],
+  "axioms_inferred": [
+    "environmental-self-healing-systems sio:hasComponent self-healing-materials",
+    "environmental-self-healing-systems sio:hasComponent pollution-mitigation"
+  ],
+  "natural_language_summary": "Graph G1 (general exploration) produced a highly connected knowledge network with scale-free structure, where concepts like **biodegradable microplastics**, **self-healing materials**, **pollution mitigation**, and **AI-driven predictive modeling** emerge as hubs:contentReference[oaicite:47]{index=47}:contentReference[oaicite:48]{index=48}.  For instance, the model discovers that combining self-healing materials with pollution mitigation leads to *environmental self-healing systems*:contentReference[oaicite:49]{index=49}, and fusing impact-resistant materials with machine learning yields *damage forecasting systems*:contentReference[oaicite:50]{index=50}.  These compositional reasoning steps ultimately produced frameworks (e.g., the *BAMES* and *EcoCycle* paradigms) that integrate materials, sustainability, and AI:contentReference[oaicite:51]{index=51}:contentReference[oaicite:52]{index=52}.  In the recursive iterations, stable hubs and bridge nodes form as the graph expands, reflecting self-organized discovery (scale-free small-world structure:contentReference[oaicite:53]{index=53}).\n\nGraph G2 (impact-resistant materials focus) highlights domain-specific entities: **impact-resistant materials**, **self-healing microcapsules** (with polymer agents), **graphene and PVDF strain sensors**, **adaptive machine learning** algorithms, and **modular infrastructure** resilience.  Here, impact-resistant materials are explicitly linked to **infrastructure resilience**:contentReference[oaicite:54]{index=54} and are characterized as materials with enhanced energy dissipation:contentReference[oaicite:55]{index=55}.  Self-healing components (e.g., microcapsules) integrate into a composite with CNT and sensors to autonomously repair damage, while ML optimizes stress distribution and healing response:contentReference[oaicite:56]{index=56}.  The iterative graph reasoning reveals emergent patterns (e.g., reinforcement zones and efficiency gains) in this system:contentReference[oaicite:57]{index=57}.  Overall, both G1 and G2 exhibit iterative reasoning loops that generate new nodes and relations, forming richly connected knowledge networks grounded in materials science:contentReference[oaicite:58]{index=58}:contentReference[oaicite:59]{index=59}."
+}

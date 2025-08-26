@@ -1,0 +1,242 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "sio": "http://semanticscience.org/resource/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "schema": "http://schema.org/"
+  },
+  "base_uri": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1",
+  "@graph": [
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/sparks",
+      "@type": ["sio:Agent"],
+      "rdfs:label": "Sparks",
+      "schema:category": "core",
+      "text_span": "We present Sparks, a multi-modal multi-agent AI model that executes the entire discovery cycle that includes hypothesis generation, experiment design and iterative refinement to develop generalizable principles and a report without human intervention.:contentReference[oaicite:0]{index=0}",
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/length-dependent-mechanical-crossover",
+      "@type": ["sio:Process"],
+      "rdfs:label": "length-dependent mechanical crossover",
+      "schema:category": "core",
+      "text_span": "a length-dependent mechanical crossover whereby beta-sheet-biased peptides surpass alpha-helical ones in unfolding force beyond 80 residues, establishing a new design principle for peptide mechanics; ...:contentReference[oaicite:1]{index=1}",
+      "relations": [
+        {
+          "predicate": "prov:wasGeneratedBy",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/sparks",
+          "text_span": "Sparks uncovered two previously unknown phenomena: (i) a length-dependent mechanical crossover whereby beta-sheet-biased peptides surpass alpha-helical ones in unfolding force beyond 80 residues, ...:contentReference[oaicite:2]{index=2}",
+          "provenance": {
+            "source": "arXiv:2504.19017v1",
+            "timestamp": "2025-08-24T08:00:00Z",
+            "model": "GPT-4@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasParticipant",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/beta-sheet-rich-peptides",
+          "text_span": "beta-sheet-biased peptides surpass alpha-helical ones in unfolding force beyond 80 residues...:contentReference[oaicite:3]{index=3}",
+          "provenance": {
+            "source": "arXiv:2504.19017v1",
+            "timestamp": "2025-08-24T08:00:00Z",
+            "model": "GPT-4@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasParticipant",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/alpha-helix-rich-peptides",
+          "text_span": "beta-sheet-biased peptides surpass alpha-helical ones in unfolding force beyond 80 residues...:contentReference[oaicite:4]{index=4}",
+          "provenance": {
+            "source": "arXiv:2504.19017v1",
+            "timestamp": "2025-08-24T08:00:00Z",
+            "model": "GPT-4@2025-08"
+          }
+        }
+      ],
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/chain-length-secondary-structure-stability-map",
+      "@type": ["sio:Entity"],
+      "rdfs:label": "chain-length/secondary-structure stability map",
+      "schema:category": "core",
+      "text_span": "a chain-length/secondary-structure stability map revealing unexpectedly robust beta-sheet-rich architectures and a “frustration zone” of high variance in mixed alpha/beta folds.:contentReference[oaicite:5]{index=5}",
+      "relations": [
+        {
+          "predicate": "prov:wasGeneratedBy",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/sparks",
+          "text_span": "The key result is that Sparks can independently conduct rigorous scientific inquiry and identify previously unknown scientific principles.:contentReference[oaicite:6]{index=6}",
+          "provenance": {
+            "source": "arXiv:2504.19017v1",
+            "timestamp": "2025-08-24T08:00:00Z",
+            "model": "GPT-4@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasParticipant",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/beta-sheet-rich-peptides",
+          "text_span": "... revealing unexpectedly robust beta-sheet-rich architectures ...:contentReference[oaicite:7]{index=7}",
+          "provenance": {
+            "source": "arXiv:2504.19017v1",
+            "timestamp": "2025-08-24T08:00:00Z",
+            "model": "GPT-4@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasParticipant",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/mixed-alpha-beta-folds",
+          "text_span": "“frustration zone” of high variance in mixed alpha/beta folds.:contentReference[oaicite:8]{index=8}",
+          "provenance": {
+            "source": "arXiv:2504.19017v1",
+            "timestamp": "2025-08-24T08:00:00Z",
+            "model": "GPT-4@2025-08"
+          }
+        }
+      ],
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/beta-sheet-rich-peptides",
+      "@type": ["sio:Entity"],
+      "rdfs:label": "beta-sheet-rich peptides",
+      "schema:category": "core",
+      "text_span": "β-sheet-rich proteins display the lowest and most length-independent RMSD values.:contentReference[oaicite:9]{index=9}",
+      "properties": {
+        "sio:hasAttribute": [
+          "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/median-maximum-unfolding-force-at-80-amino-acids-beta-sheet-rich-peptides"
+        ]
+      },
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/alpha-helix-rich-peptides",
+      "@type": ["sio:Entity"],
+      "rdfs:label": "alpha-helix-rich peptides",
+      "schema:category": "core",
+      "text_span": "α-helix-rich proteins exhibit a shallow, non-monotonic dependence on length.:contentReference[oaicite:10]{index=10}",
+      "properties": {
+        "sio:hasAttribute": [
+          "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/median-maximum-rmsd-at-60-amino-acids-alpha-helix-rich-peptides"
+        ]
+      },
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/mixed-alpha-beta-folds",
+      "@type": ["sio:Entity"],
+      "rdfs:label": "mixed alpha/beta folds",
+      "schema:category": "core",
+      "text_span": "Mixed α/β proteins are distinctly less stable at short lengths but converge towards the pure classes with increasing length.:contentReference[oaicite:11]{index=11}",
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/median-maximum-unfolding-force-at-80-amino-acids-beta-sheet-rich-peptides",
+      "@type": ["sio:Attribute"],
+      "rdfs:label": "Median maximum unfolding force at 80 amino acids (beta-sheet-rich peptides)",
+      "schema:category": "core",
+      "text_span": "At a peptide length of 80 amino acids, β-sheets achieved a median Fmax of 0.399 (CI: [0.303, 0.417]), overtaking α-helices, which reached 0.313 (CI: [0.313, 0.379]).:contentReference[oaicite:12]{index=12}",
+      "properties": {
+        "rdf:value": {
+          "@value": 0.399,
+          "@type": "xsd:float"
+        },
+        "unit": "obo:UO_0000186"
+      },
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/median-maximum-rmsd-at-60-amino-acids-alpha-helix-rich-peptides",
+      "@type": ["sio:Attribute"],
+      "rdfs:label": "Median maximum RMSD at 60 amino acids (alpha-helix-rich peptides)",
+      "schema:category": "core",
+      "text_span": "The median RMSD for α designs increases from 2.86 Å at 40 aa to a peak of 4.00 Å at 60 aa, then declines to 2.44–2.80 Å at 100–120 aa.:contentReference[oaicite:13]{index=13}",
+      "properties": {
+        "rdf:value": {
+          "@value": 4.0,
+          "@type": "xsd:float"
+        },
+        "unit": "obo:UO_0000019"
+      },
+      "provenance": {
+        "source": "arXiv:2504.19017v1",
+        "timestamp": "2025-08-24T08:00:00Z",
+        "model": "GPT-4@2025-08"
+      }
+    }
+  ],
+  "axioms_inferred": {
+    "classes": [
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/beta-sheet-rich-peptides",
+        "@type": ["owl:Class"],
+        "subClassOf": ["obo:CHEBI_15841"],
+        "confidence": 0.9
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/alpha-helix-rich-peptides",
+        "@type": ["owl:Class"],
+        "subClassOf": ["obo:CHEBI_15841"],
+        "confidence": 0.9
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/mixed-alpha-beta-folds",
+        "@type": ["owl:Class"],
+        "subClassOf": ["obo:CHEBI_15841"],
+        "confidence": 0.9
+      }
+    ],
+    "properties": [
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/has-median-unfolding-force",
+        "@type": ["owl:ObjectProperty"],
+        "subPropertyOf": "sio:hasAttribute",
+        "domain": "obo:CHEBI_15841",
+        "range": "obo:UO_0000186",
+        "confidence": 0.8
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/2504-19017v1/has-maximum-rmsd",
+        "@type": ["owl:ObjectProperty"],
+        "subPropertyOf": "sio:hasAttribute",
+        "domain": "obo:CHEBI_15841",
+        "range": "obo:UO_0000019",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "natural_language_summary": "Sparks, a multi-modal multi-agent AI system, autonomously discovered new protein design principles through iterative self-driven research. The knowledge graph captures a length-dependent mechanical crossover: beyond roughly 80 amino acids, beta-sheet-rich peptides exhibit higher unfolding force than alpha-helix-rich peptides. It also encodes a chain length vs. stability map, where beta-sheet architectures maintain low maximum RMSD (indicating high stability) even as sequences grow, whereas mixed alpha/beta structures show a \"frustration zone\" of high structural variability at intermediate lengths. Key entities include the Sparks model and peptide classes (alpha-helix-rich, beta-sheet-rich, mixed), linked by semantic relations to measured attributes such as unfolding force and RMSD that substantiate these findings."
+}

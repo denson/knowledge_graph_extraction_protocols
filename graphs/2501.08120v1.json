@@ -1,0 +1,1083 @@
+{
+    "@context": {
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "sio": "http://semanticscience.org/resource/",
+      "sosa": "http://www.w3.org/ns/sosa/",
+      "ssn": "http://www.w3.org/ns/ssn/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "schema": "http://schema.org/"
+    },
+    "base_uri": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/",
+    "@graph": [
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/music",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Music",
+        "schema:category": "core",
+        "text_span": "Music has dynamic responses on materials, similar to how it affects human emotions.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/nonlinear-dynamic-response",
+            "text_span": "Music -[INFLUENCES]-> Nonlinear Dynamic Response",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/material\u2019s-mechanical-properties",
+            "text_span": "Music has a proportional influence on Material\u2019s Mechanical Properties",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/audio-signal",
+        "@type": [
+          "sio:Entity"
+        ],
+        "rdfs:label": "Audio Signal",
+        "schema:category": "core",
+        "text_span": "Music -[IS-A]-> Audio Signal",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/material",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Material",
+        "schema:category": "core",
+        "text_span": "Material -[IS-A]-> Physical Substance",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/frequency-spectrum",
+            "text_span": "Material -[INFLUENCES]-> Frequency Spectrum",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/physical-substance",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Physical Substance",
+        "schema:category": "core",
+        "text_span": "Material -[IS-A]-> Physical Substance",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/frequency",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Frequency",
+        "schema:category": "core",
+        "text_span": "Frequency -[RELATES-TO]-> Music",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/music",
+            "text_span": "Frequency -[RELATES-TO]-> Music",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/frequency-spectrum",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Frequency Spectrum",
+        "schema:category": "core",
+        "text_span": "Frequency Spectrum -[RELATES-TO]-> Music",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/music",
+            "text_span": "Frequency Spectrum -[INFLUENCES]-> Music",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/nonlinear-dynamic-response",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Nonlinear Dynamic Response",
+        "schema:category": "core",
+        "text_span": "Nonlinear Dynamic Response -[INFLUENCES]-> Material\u2019s Mechanical Properties",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/material\u2019s-mechanical-properties",
+            "text_span": "Nonlinear Dynamic Response -[INFLUENCES]-> Material\u2019s Mechanical Properties",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/material\u2019s-mechanical-properties",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Material\u2019s Mechanical Properties",
+        "schema:category": "core",
+        "text_span": "spectrum of music directly influences material properties",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/fractal-pattern",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Fractal Pattern",
+        "schema:category": "core",
+        "text_span": "the protein material exhibits fractal patterns and self-similarity.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/hierarchical-structure",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Hierarchical Structure",
+        "schema:category": "core",
+        "text_span": "Mimics ant behavior by creating hierarchical structures at multiple length scales.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/snowflakes",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Snowflakes",
+        "schema:category": "core",
+        "text_span": "Inspired by snowflakes, the protein material exhibits fractal patterns...",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/protein-based-material",
+            "text_span": "Inspired by snowflakes, the protein material exhibits fractal patterns...",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/flower-petals",
+            "text_span": "Snowflakes and flower petals represent opposing seasons, creating a striking contrast.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/flower-petals",
+            "text_span": "Together, they create a harmonious representation of nature\u2019s beauty.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/winter",
+            "text_span": "Snowflakes are associated with winter",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/serenity",
+            "text_span": "Snowflakes evoke a sense of serenity and uniqueness",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/uniqueness",
+            "text_span": "Snowflakes evoke a sense of serenity and uniqueness",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/ant-behavior",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Ant Behavior",
+        "schema:category": "core",
+        "text_span": "Mimics ant behavior by creating hierarchical structures at multiple length scales.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/protein-based-material",
+            "text_span": "inspired by ants, to enhance toughness, adaptability, and diversity",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/hierarchical-structure",
+            "text_span": "Mimics ant behavior by creating hierarchical structures at multiple length scales.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/protein-based-material",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Protein-based Material",
+        "schema:category": "core",
+        "text_span": "creating a protein-based material with fractal patterns and hierarchical structures, similar to snowflakes and ants, to enhance toughness, adaptability, and diversity in applications.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "prov:wasInfluencedBy",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/snowflakes",
+            "text_span": "Inspired by snowflakes, the protein material exhibits fractal patterns...",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "prov:wasInfluencedBy",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/ant-behavior",
+            "text_span": "inspired by ants, to enhance toughness, adaptability, and diversity",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/fractal-pattern",
+            "text_span": "the protein material exhibits fractal patterns and self-similarity.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/hierarchical-structure",
+            "text_span": "Mimics ant behavior by creating hierarchical structures at multiple length scales.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/toughness",
+            "text_span": "create tough, protein-based materials.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/adaptability",
+            "text_span": "promote adaptability and diversity in the material\u2019s properties.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/toughness",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Toughness",
+        "schema:category": "core",
+        "text_span": "create tough, protein-based materials.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/adaptability",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Adaptability",
+        "schema:category": "core",
+        "text_span": "Designed for diverse applications by mimicking snowflake and ant patterns.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/self-healing",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Self-healing",
+        "schema:category": "core",
+        "text_span": "such as self-healing and adaptability",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/tissue-engineering",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Tissue Engineering",
+        "schema:category": "core",
+        "text_span": "tissue engineering, wound dressing, and drug delivery.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "prov:used",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/protein-based-material",
+            "text_span": "protein-based materials can be used in biomedical applications such as tissue engineering",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/bioluminescent-biomaterials",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Bioluminescent Biomaterials",
+        "schema:category": "core",
+        "text_span": "tissue engineering and bioluminescent biomaterials, bridging realms often seen as incompatible.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/thin-places",
+        "@type": [
+          "sio:Entity"
+        ],
+        "rdfs:label": "Thin Places",
+        "schema:category": "core",
+        "text_span": "Thin places is a concept drawn from various mythological and spiritual traditions, notably Celtic lore, referring to sites or moments where the boundary between the physical world and a transcendent realm is perceived to be exceptionally thin or permeable.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/challenging-understanding-boundaries",
+            "text_span": "conceptual blurring of boundaries",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/mythological-art-installations",
+            "text_span": "connected to site-specific, mythological art installations",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/tissue-engineering",
+            "text_span": "inform innovative approaches to tissue engineering and bioluminescent biomaterials",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/bioluminescent-biomaterials",
+            "text_span": "inform innovative approaches to tissue engineering and bioluminescent biomaterials",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/mythological-art-installations",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Mythological Art Installations",
+        "schema:category": "core",
+        "text_span": "connected to site-specific, mythological art installations",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/challenging-understanding-boundaries",
+        "@type": [
+          "sio:Entity"
+        ],
+        "rdfs:label": "Challenging Understanding Boundaries",
+        "schema:category": "core",
+        "text_span": "blurring the lines between biology, art, and technology",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/biomaterial-engineering",
+            "text_span": "boundary-blurring practices of ... biomaterial engineering.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/protein-design",
+            "text_span": "boundary-blurring practices of protein design",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/protein-design",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Protein Design",
+        "schema:category": "core",
+        "text_span": "protein design based on collagen and elastin.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/biomaterial-engineering",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Biomaterial Engineering",
+        "schema:category": "core",
+        "text_span": "boundary-blurring practices of protein design and biomaterial engineering.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/mytho-luminal-liminality",
+        "@type": [
+          "sio:Entity"
+        ],
+        "rdfs:label": "Mytho-Luminal Liminality",
+        "schema:category": "core",
+        "text_span": "uniting the mythological concept of thin places with the boundary-blurring practices of protein design and biomaterial engineering.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/thin-places",
+            "text_span": "uniting the mythological concept of thin places with ... biomaterial engineering.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/challenging-understanding-boundaries",
+            "text_span": "boundary-blurring practices of protein design and biomaterial engineering.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/protein-design",
+            "text_span": "boundary-blurring practices of protein design and biomaterial engineering.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/biomaterial-engineering",
+            "text_span": "boundary-blurring practices of protein design and biomaterial engineering.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/bio-inspired-materials",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Bio-inspired Materials",
+        "schema:category": "core",
+        "text_span": "Bio-inspired Materials derived from Nature, such as self-healing and adaptability, impact the development of Sustainable Materials for Human Well-being in Ecosystems.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/self-healing",
+            "text_span": "such as self-healing and adaptability",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/adaptability",
+            "text_span": "such as self-healing and adaptability",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/sustainable-materials",
+            "text_span": "impact the development of Sustainable Materials for Human Well-being in Ecosystems.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/mitigation-of-climate-change-effects",
+            "text_span": "mitigating the effects of climate change on ecosystems",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/sustainable-materials",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Sustainable Materials",
+        "schema:category": "core",
+        "text_span": "contribute to sustainable materials for human well-being in ecosystems",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/human-well-being",
+            "text_span": "for human well-being in ecosystems",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/human-well-being",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Human Well-being",
+        "schema:category": "core",
+        "text_span": "human well-being in ecosystems",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/ecosystems",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Ecosystems",
+        "schema:category": "core",
+        "text_span": "human well-being in ecosystems",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/mitigation-of-climate-change-effects",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Mitigation of Climate Change Effects",
+        "schema:category": "core",
+        "text_span": "Mitigation of Climate Change Effects in Ecosystems",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/ecosystem-resilience",
+            "text_span": "the effects of climate change on ecosystem resilience",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:influences",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/biodiversity-conservation",
+            "text_span": "effects of climate change on ... biodiversity conservation.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/ecosystem-resilience",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Ecosystem Resilience",
+        "schema:category": "core",
+        "text_span": "ecosystem resilience and biodiversity conservation.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/biodiversity-conservation",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Biodiversity Conservation",
+        "schema:category": "core",
+        "text_span": "ecosystem resilience and biodiversity conservation.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/flower-petals",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Flower Petals",
+        "schema:category": "core",
+        "text_span": "flower petals are associated with spring.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:related_to",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/spring",
+            "text_span": "flower petals are associated with spring.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/delicacy",
+            "text_span": "flower petals symbolize delicacy and renewal.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/renewal",
+            "text_span": "flower petals symbolize delicacy and renewal.",
+            "provenance": {
+              "source": "doi:10.48550/arXiv.2501.08120",
+              "timestamp": "2025-08-24T14:00:00Z",
+              "model": "GPT-5-Thinking@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/winter",
+        "@type": [
+          "sio:Entity"
+        ],
+        "rdfs:label": "Winter",
+        "schema:category": "core",
+        "text_span": "Snowflakes are associated with winter",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/spring",
+        "@type": [
+          "sio:Entity"
+        ],
+        "rdfs:label": "Spring",
+        "schema:category": "core",
+        "text_span": "flower petals are associated with spring.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/environmental-impact",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Environmental Impact",
+        "schema:category": "core",
+        "text_span": "environmental impact of bio-inspired materials",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/long-term-performance",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Long-term Performance",
+        "schema:category": "core",
+        "text_span": "long-term performance and environmental impact of bio-inspired materials",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/serenity",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Serenity",
+        "schema:category": "core",
+        "text_span": "Snowflakes evoke a sense of serenity and uniqueness",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/uniqueness",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Uniqueness",
+        "schema:category": "core",
+        "text_span": "Snowflakes evoke a sense of serenity and uniqueness",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/delicacy",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Delicacy",
+        "schema:category": "core",
+        "text_span": "flower petals symbolize delicacy and renewal.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/renewal",
+        "@type": [
+          "sio:Attribute"
+        ],
+        "rdfs:label": "Renewal",
+        "schema:category": "core",
+        "text_span": "flower petals symbolize delicacy and renewal.",
+        "provenance": {
+          "source": "doi:10.48550/arXiv.2501.08120",
+          "timestamp": "2025-08-24T14:00:00Z",
+          "model": "GPT-5-Thinking@2025-08"
+        },
+        "relations": []
+      }
+    ],
+    "axioms_local": {
+      "classes": [
+        {
+          "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/music",
+          "@type": [
+            "owl:Class"
+          ],
+          "rdfs:subClassOf": [
+            "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/audio-signal"
+          ]
+        },
+        {
+          "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/material",
+          "@type": [
+            "owl:Class"
+          ],
+          "rdfs:subClassOf": [
+            "https://knowledgecrystal.com/kg/rs-foundation-models/graph-preflexor/physical-substance"
+          ]
+        }
+      ],
+      "properties": []
+    },
+    "axioms_inferred": {
+      "classes": [],
+      "properties": [
+        {
+          "@id": "sio:influences",
+          "@type": [
+            "owl:ObjectProperty"
+          ],
+          "owl:propertyChainAxiom": [
+            "sio:influences",
+            "sio:influences"
+          ]
+        }
+      ]
+    },
+    "natural_language_summary": "This knowledge graph integrates multiple cross-domain examples of reasoning and design. It shows how musical concepts can influence material properties (through frequency spectra and dynamic responses), and how a protein-based material was designed using fractal patterns inspired by snowflakes and hierarchical structures inspired by ant colonies to achieve high toughness and adaptability. Another subgraph captures a creative task of combining snowflakes and flower petals in a song, highlighting their contrasting seasonal symbolism and a harmonious blend of nature\u2019s beauty. The graph also explores bio-inspired materials science: self-healing and adaptable material properties are linked to sustainable materials development, ecosystem resilience, and climate change mitigation. Finally, a mythological concept of 'thin places' is connected to site-specific art and to boundary-blurring ideas in biotechnology, suggesting how mythic notions can inspire innovative approaches in tissue engineering and biomaterial design (a framework termed 'Mytho-Luminal Liminality')."
+  }
+  

@@ -1,0 +1,684 @@
+{
+    "@context": {
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "sio": "http://semanticscience.org/resource/",
+      "sosa": "http://www.w3.org/ns/sosa/",
+      "ssn": "http://www.w3.org/ns/ssn/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "schema": "http://schema.org/"
+    },
+    "base_uri": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/",
+    "@graph": [
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/human-0c5ea79f",
+        "@type": [
+          "prov:Person"
+        ],
+        "rdfs:label": "Human",
+        "schema:category": "core",
+        "text_span": "“Human”: human user that poses the task:contentReference[oaicite:0]{index=0}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/planner-161d901b",
+        "@type": [
+          "prov:SoftwareAgent"
+        ],
+        "rdfs:label": "Planner",
+        "schema:category": "core",
+        "text_span": "“Planner”: suggests a detailed plan to solve the task:contentReference[oaicite:1]{index=1}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/ontologist-ca9a7568",
+        "@type": [
+          "prov:SoftwareAgent"
+        ],
+        "rdfs:label": "Ontologist",
+        "schema:category": "core",
+        "text_span": "“Ontologist”: responsible to define the relationships and concepts within the knowledge graph:contentReference[oaicite:2]{index=2}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/scientist-1-8c2f6194",
+        "@type": [
+          "prov:SoftwareAgent"
+        ],
+        "rdfs:label": "Scientist 1",
+        "schema:category": "core",
+        "text_span": "“Scientist 1”: crafts the initial draft of a detailed research hypothesis with seven key items:contentReference[oaicite:3]{index=3}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/scientist-2-d9a4f1e0",
+        "@type": [
+          "prov:SoftwareAgent"
+        ],
+        "rdfs:label": "Scientist 2",
+        "schema:category": "core",
+        "text_span": "“Scientist 2”: expands and refines the different key aspects of the research proposal:contentReference[oaicite:4]{index=4}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/critic-d8764e97",
+        "@type": [
+          "prov:SoftwareAgent"
+        ],
+        "rdfs:label": "Critic",
+        "schema:category": "core",
+        "text_span": "“Critic”: conducts a thorough review and suggests improvements:contentReference[oaicite:5]{index=5}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/assistant-590a75d2",
+        "@type": [
+          "prov:SoftwareAgent"
+        ],
+        "rdfs:label": "Assistant",
+        "schema:category": "core",
+        "text_span": "“Assistant”: has access to external tools (e.g., knowledge path generation, novelty assessment):contentReference[oaicite:6]{index=6}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/group-chat-manager-dcac69cb",
+        "@type": [
+          "prov:SoftwareAgent"
+        ],
+        "rdfs:label": "Group chat manager",
+        "schema:category": "core",
+        "text_span": "“Group chat manager”: chooses the next speaker based on context and broadcasts messages:contentReference[oaicite:7]{index=7}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/detailed-plan-for-hypothesis-generation-9f109f61",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Detailed plan for hypothesis generation",
+        "schema:category": "core",
+        "text_span": "the automated multi-agent collaboration starts with a plan from the planner detailing the steps required to accomplish the task:contentReference[oaicite:8]{index=8}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasParticipant",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/planner-161d901b",
+            "text_span": "Planner (to chat_manager): Formulates a detailed plan:contentReference[oaicite:9]{index=9}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/knowledge-path-generation-from-keywords-6b52bfb6",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Knowledge path generation from keywords",
+        "schema:category": "core",
+        "text_span": "Assistant: ... Generating a knowledge graph using two keywords:contentReference[oaicite:10]{index=10}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasParticipant",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/assistant-590a75d2",
+            "text_span": "Assistant (to chat_manager): ... generating a knowledge graph using two keywords:contentReference[oaicite:11]{index=11}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/ontological-definition-of-concepts-and-relationships-c5258c8c",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Ontological definition of concepts and relationships",
+        "schema:category": "core",
+        "text_span": "Ontologist defines the concepts and discusses the relationships in the knowledge graph:contentReference[oaicite:12]{index=12}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasParticipant",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/ontologist-ca9a7568",
+            "text_span": "Ontologist (to chat_manager): Defines the concepts and discusses the relationships:contentReference[oaicite:13]{index=13}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/initial-hypothesis-formulation-5b9e7a61",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Initial hypothesis formulation",
+        "schema:category": "core",
+        "text_span": "Scientist 1 ... synthesizes a novel research hypothesis ... comprising “hypothesis”, “outcome”, “mechanism”, ... “novelty”:contentReference[oaicite:14]{index=14}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasParticipant",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/scientist-1-8c2f6194",
+            "text_span": "Scientist 1 (to chat_manager): Synthesizes a novel research hypothesis ... comprising seven keys:contentReference[oaicite:15]{index=15}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/expansion-of-hypothesis-details-8122d7fe",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Expansion of hypothesis details",
+        "schema:category": "core",
+        "text_span": "Scientist 2 ... expands on the different aspects of the research hypothesis crafted by Scientist 1:contentReference[oaicite:16]{index=16}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasParticipant",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/scientist-2-d9a4f1e0",
+            "text_span": "Scientist 2 (to chat_manager): Expands on the different aspects of the research hypothesis:contentReference[oaicite:17]{index=17}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/critical-review-and-improvement-suggestions-6707b334",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Critical review and improvement suggestions",
+        "schema:category": "core",
+        "text_span": "Critic ... provides a thorough critical scientific review and suggests improvements:contentReference[oaicite:18]{index=18}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasParticipant",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/critic-d8764e97",
+            "text_span": "Critic (to chat_manager): Provides a summary, critique, and suggests improvements:contentReference[oaicite:19]{index=19}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/novelty-and-feasibility-assessment-e363d81f",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Novelty and feasibility assessment",
+        "schema:category": "core",
+        "text_span": "the assistant agent executes another tool to analyze and score the novelty and feasibility of the proposed research idea:contentReference[oaicite:20]{index=20}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasParticipant",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/assistant-590a75d2",
+            "text_span": "Assistant (to chat_manager): ... rating the novelty and feasibility of the research idea:contentReference[oaicite:21]{index=21}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/silk-pigment-composite-material-55f8c110",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Silk-pigment composite material",
+        "schema:category": "obo",
+        "text_span": "The integration aims to leverage the hierarchical organization of silk fibroin and the unique optical properties of dandelion-derived flavonoids (e.g., luteolin) to achieve enhanced mechanical strength and vibrant structural colors:contentReference[oaicite:22]{index=22}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/design-principles-for-the-silk-pigment-composite-01c9b8da",
+            "text_span": "Table 2: Summary of design principles for energy-efficient, structurally colored silk composites:contentReference[oaicite:23]{index=23}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/comparison-with-traditional-silk-materials-dcd186bf",
+            "text_span": "Compared to traditional silk materials, the proposed composite material will exhibit significantly improved mechanical strength and vibrant structural colors:contentReference[oaicite:24]{index=24}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/self-healing-capability-of-the-composite-material-f84c0c9e",
+            "text_span": "Silk proteins have inherent self-healing capabilities ... the integration of dandelion-derived pigments could enhance this property:contentReference[oaicite:25]{index=25}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/stimuli-responsive-structural-color-property-fd4effc8",
+            "text_span": "The structural colors of the composite material could change in response to environmental stimuli... attributed to silk’s hygroscopic nature and responsive pigments:contentReference[oaicite:26]{index=26}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasAttribute",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/uv-protection-and-antimicrobial-effects-333fec55",
+            "text_span": "The integration of dandelion pigments introduces additional functionalities like UV protection and antimicrobial properties:contentReference[oaicite:27]{index=27}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/molecular-dynamics-(md)-simulations-05c937aa",
+            "text_span": "The model suggests using Molecular Dynamics (MD) simulations to explore interactions at the molecular level in the silk-pigment system:contentReference[oaicite:28]{index=28}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/uv-vis-spectroscopy-f7d44971",
+            "text_span": "UV-Vis spectroscopy is used to analyze the optical properties of the composite and confirm desired reflectance peaks:contentReference[oaicite:29]{index=29}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/biomimetic-lamellar-microfluidic-chip-453044b8",
+        "@type": [
+          "sio:Object"
+        ],
+        "rdfs:label": "Biomimetic lamellar microfluidic chip",
+        "schema:category": "obo",
+        "text_span": "The proposed idea involves engineering the lamellar structure of biomaterials, inspired by keratin scales, into microfluidic chips ... to improve their mechanical behavior and heat transfer efficiency:contentReference[oaicite:30]{index=30}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/expected-outcomes-of-biomimetic-microfluidic-chips-7c0ad3a5",
+            "text_span": "Expected outcomes of the resulting biomimetic microfluidic chips include a 20–30% increase in heat transfer efficiency...:contentReference[oaicite:31]{index=31}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/unexpected-properties-of-biomimetic-microfluidic-chips-36c2f2e1",
+            "text_span": "the model predicts that biomimetic microfluidic chips may exhibit unexpected properties, such as self-healing capabilities, adaptive heat transfer...:contentReference[oaicite:32]{index=32}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/design-principles-for-biomimetic-microfluidic-chips-94396ff0",
+            "text_span": "The design principles for biomimetic microfluidic chips focus on material selection, fabrication, integration...:contentReference[oaicite:33]{index=33}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/finite-element-analysis-(fea)-1c3c32c5",
+            "text_span": "Finite Element Analysis (FEA) simulations help model the mechanical stability of the microfluidic chip under load:contentReference[oaicite:34]{index=34}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          },
+          {
+            "predicate": "sio:hasPart",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/computational-fluid-dynamics-(cfd)-simulations-47c39c7f",
+            "text_span": "Computational Fluid Dynamics (CFD) simulations help model heat transfer and fluid flow in the chip:contentReference[oaicite:35]{index=35}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/expected-outcomes-of-biomimetic-microfluidic-chips-7c0ad3a5",
+        "@type": [
+          "sio:InformationContentEntity"
+        ],
+        "rdfs:label": "Expected outcomes of biomimetic microfluidic chips",
+        "schema:category": "core",
+        "text_span": "A 20–30% increase in heat transfer efficiency, a 15% reduction in failure rate under cyclic loading, and superior biocompatibility:contentReference[oaicite:36]{index=36}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/stimuli-responsive-structural-color-property-fd4effc8",
+        "@type": [
+          "sio:Quality"
+        ],
+        "rdfs:label": "Stimuli-responsive structural color property",
+        "schema:category": "obo",
+        "text_span": "The structural colors of the composite material could change in response to humidity and temperature... This responsiveness can be attributed to the hygroscopic nature of silk and the responsive behavior of dandelion pigments:contentReference[oaicite:37]{index=37}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasMethod",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/finite-element-analysis-(fea)-1c3c32c5",
+            "text_span": "This responsiveness can be modeled using finite element analysis (FEA) to simulate the mechanical and optical responses under varying conditions:contentReference[oaicite:38]{index=38}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/uv-protection-and-antimicrobial-effects-333fec55",
+        "@type": [
+          "sio:Quality"
+        ],
+        "rdfs:label": "UV protection and antimicrobial effects",
+        "schema:category": "obo",
+        "text_span": "Dandelion-derived pigments contain flavonoids and phenolic acids with UV-absorbing properties... The presence of compounds such as taraxacin and lactones contributes to antimicrobial properties. Expected results include a UV-blocking efficiency of over 90% and inhibition zones of 10–15 mm:contentReference[oaicite:39]{index=39}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/design-principles-for-the-silk-pigment-composite-01c9b8da",
+        "@type": [
+          "sio:InformationContentEntity"
+        ],
+        "rdfs:label": "Design principles for the silk-pigment composite",
+        "schema:category": "core",
+        "text_span": "Control pigment concentration (0.1–1.0% w/v) to achieve desired optical properties. Use FDTD simulations for light interaction and verify reflectance peaks with UV-Vis spectroscopy:contentReference[oaicite:40]{index=40}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/design-principles-for-biomimetic-microfluidic-chips-94396ff0",
+        "@type": [
+          "sio:InformationContentEntity"
+        ],
+        "rdfs:label": "Design principles for biomimetic microfluidic chips",
+        "schema:category": "core",
+        "text_span": "Materials such as PDMS and hydrogels mimic the lamellar structure of keratin scales, chosen for biocompatibility and mechanical properties; soft lithography is employed for fabrication, and integration with microfluidic technology enhances performance:contentReference[oaicite:41]{index=41}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/comparison-with-traditional-silk-materials-dcd186bf",
+        "@type": [
+          "sio:InformationContentEntity"
+        ],
+        "rdfs:label": "Comparison with traditional silk materials",
+        "schema:category": "core",
+        "text_span": "Traditional silk materials typically have tensile strength 0.5–1.0 GPa. The proposed composite aims for up to 1.5 GPa, attributed to hierarchical silk structures and pigment reinforcement:contentReference[oaicite:42]{index=42}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/novelty-and-feasibility-analysis-results-1baf468d",
+        "@type": [
+          "sio:InformationContentEntity"
+        ],
+        "rdfs:label": "Novelty and feasibility analysis results",
+        "schema:category": "core",
+        "text_span": "the proposed research hypothesis has a high degree of novelty and a reasonable level of feasibility:contentReference[oaicite:43]{index=43}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/molecular-dynamics-(md)-simulations-05c937aa",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Molecular Dynamics (MD) simulations",
+        "schema:category": "obo",
+        "text_span": "Specifically, it proposes employing software like GROMACS or AMBER to model how silk fibroin interacts with dandelion pigments, aiming to understand the self-assembly process and predict the resulting microstructures:contentReference[oaicite:44]{index=44}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/finite-element-analysis-(fea)-1c3c32c5",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Finite Element Analysis (FEA)",
+        "schema:category": "obo",
+        "text_span": "Use FEA to simulate the mechanical behavior of the composite under different loading conditions:contentReference[oaicite:45]{index=45}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/computational-fluid-dynamics-(cfd)-simulations-47c39c7f",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Computational Fluid Dynamics (CFD) simulations",
+        "schema:category": "obo",
+        "text_span": "Use CFD to simulate fluid flow within the microfluidic channels and predict the performance of the integrated system (flow rate, pressure drop, heat transfer efficiency):contentReference[oaicite:46]{index=46}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/uv-vis-spectroscopy-f7d44971",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "UV-Vis spectroscopy",
+        "schema:category": "obo",
+        "text_span": "Verify reflectance peaks with UV-Vis spectroscopy. Use UV-Vis spectroscopy to analyze the optical properties and confirm the presence of desired reflectance peaks:contentReference[oaicite:47]{index=47}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/tensile-testing-67416f03",
+        "@type": [
+          "sio:Process"
+        ],
+        "rdfs:label": "Tensile testing",
+        "schema:category": "obo",
+        "text_span": "Measure the recovery of mechanical strength using tensile testing after controlled damage to the composite material:contentReference[oaicite:48]{index=48}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/self-healing-capability-of-the-composite-material-f84c0c9e",
+        "@type": [
+          "sio:Quality"
+        ],
+        "rdfs:label": "Self-healing capability of the composite material",
+        "schema:category": "obo",
+        "text_span": "the reformation of the material’s structure after damage, with an expected recovery of mechanical strength up to 80% within 24 hours at ambient conditions:contentReference[oaicite:49]{index=49}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        },
+        "relations": [
+          {
+            "predicate": "sio:hasMethod",
+            "object": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/tensile-testing-67416f03",
+            "text_span": "the self-healing efficiency is measured by the recovery of mechanical strength using tensile testing:contentReference[oaicite:50]{index=50}",
+            "provenance": {
+              "source": "arXiv:2409.05556v1",
+              "timestamp": "2025-08-24T14:32:10Z",
+              "model": "GPT-5 Pro@2025-08"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/sciagents-automating-scientific-discovery-through-multi-agent-intelligent-graph-reasoning-a6838d00/unexpected-properties-of-biomimetic-microfluidic-chips-36c2f2e1",
+        "@type": [
+          "sio:InformationContentEntity"
+        ],
+        "rdfs:label": "Unexpected properties of biomimetic microfluidic chips",
+        "schema:category": "core",
+        "text_span": "the biomimetic microfluidic chips may exhibit unexpected properties, such as self-healing capabilities, adaptive heat transfer, enhanced fluid dynamics, and improved chemical resistance:contentReference[oaicite:51]{index=51}",
+        "provenance": {
+          "source": "arXiv:2409.05556v1",
+          "timestamp": "2025-08-24T14:32:10Z",
+          "model": "GPT-5 Pro@2025-08"
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,231 @@
+{
+  "@context": {
+    "sio": "http://semanticscience.org/resource/",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/iterative-reasoning-e8a976",
+      "label": "iterative-reasoning-e8a976",
+      "schema:category": "Process",
+      "type": "sio:Process",
+      "text_span": "leading to iterative reasoning (orange), so that the model expands the graph with increasing number of nodes and edges:contentReference[oaicite:0]{index=0}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-expansion-126385",
+      "label": "graph-expansion-126385",
+      "schema:category": "Process",
+      "type": "sio:Process",
+      "text_span": "the model expands the graph with increasing number of nodes and edges:contentReference[oaicite:1]{index=1}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/entropy-computation-4b7e44",
+      "label": "entropy-computation-4b7e44",
+      "schema:category": "Process",
+      "type": "sio:Process",
+      "text_span": "Structural entropy was computed using Von Neumann entropy derived from the normalized Laplacian of the graph. Semantic entropy was calculated based on cosine similarities of node embeddings:contentReference[oaicite:2]{index=2}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/von-neumann-graph-entropy-8929a9",
+      "label": "von-neumann-graph-entropy-8929a9",
+      "schema:category": "Measure",
+      "type": "sio:Attribute",
+      "text_span": "structural entropy (Von Neumann graph entropy):contentReference[oaicite:3]{index=3}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-entropy-6e2f35",
+      "label": "semantic-entropy-6e2f35",
+      "schema:category": "Measure",
+      "type": "sio:Attribute",
+      "text_span": "semantic entropy was calculated based on cosine similarities of node embeddings:contentReference[oaicite:4]{index=4}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/critical-discovery-parameter-713335",
+      "label": "critical-discovery-parameter-713335",
+      "schema:category": "Measure",
+      "type": "sio:Attribute",
+      "text_span": "Critical Discovery Parameter (D) explicitly quantifies this balance between structural and semantic entropy:contentReference[oaicite:5]{index=5}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/cross-correlation-c5f674",
+      "label": "cross-correlation-c5f674",
+      "schema:category": "Measure",
+      "type": "sio:Attribute",
+      "text_span": "Cross-correlation between structural and semantic entropy reveals a critical transition near iteration 400...:contentReference[oaicite:6]{index=6}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/betweenness-centrality-314870",
+      "label": "betweenness-centrality-314870",
+      "schema:category": "Measure",
+      "type": "sio:Attribute",
+      "text_span": "node betweenness centrality indicates that structurally important nodes tend to connect neighborhoods composed of semantically diverse concepts:contentReference[oaicite:7]{index=7}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-neighbor-diversity-d3b4c7",
+      "label": "semantic-neighbor-diversity-d3b4c7",
+      "schema:category": "Measure",
+      "type": "sio:Attribute",
+      "text_span": "positive correlation between node betweenness centrality and local semantic neighbor diversity indicates that structurally central nodes connect neighbors with diverse embeddings:contentReference[oaicite:8]{index=8}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/fraction-surprising-edges-62216c",
+      "label": "fraction-surprising-edges-62216c",
+      "schema:category": "Measure",
+      "type": "sio:Attribute",
+      "text_span": "the ratio of surprising edges stabilizes around 12%:contentReference[oaicite:9]{index=9}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-preflexor-model-547566",
+      "label": "graph-preflexor-model-547566",
+      "schema:category": "Model",
+      "type": "sio:Agent",
+      "text_span": "Graph-PRefLexOR iteratively constructs knowledge graphs by recursively applying neural reasoning:contentReference[oaicite:10]{index=10}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/knowledge-graph-0071e4",
+      "label": "knowledge-graph-0071e4",
+      "schema:category": "Graph",
+      "type": "sio:Entity",
+      "text_span": "the model autonomously expanded and refined a knowledge graph:contentReference[oaicite:11]{index=11}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-node-5a48d4",
+      "label": "graph-node-5a48d4",
+      "schema:category": "Entity",
+      "type": "sio:Entity",
+      "text_span": "Nodes emerge iteratively through recursive reasoning:contentReference[oaicite:12]{index=12}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-edge-597f3e",
+      "label": "graph-edge-597f3e",
+      "schema:category": "Entity",
+      "type": "sio:Entity",
+      "text_span": "Edges emerge iteratively through recursive reasoning:contentReference[oaicite:13]{index=13}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/surprising-edge-48132d",
+      "label": "surprising-edge-48132d",
+      "schema:category": "Entity",
+      "type": "sio:Entity",
+      "text_span": "surprising edges are defined as edges that are structurally connected but semantically distant:contentReference[oaicite:14]{index=14}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-embedding-30c14b",
+      "label": "semantic-embedding-30c14b",
+      "schema:category": "Representation",
+      "type": "sio:Entity",
+      "text_span": "node representations are within a learned embedding space from pretrained language model embeddings:contentReference[oaicite:15]{index=15}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/discovery-phase-transition-d780fb",
+      "label": "discovery-phase-transition-d780fb",
+      "schema:category": "Process",
+      "type": "sio:Process",
+      "text_span": "a critical transition near iteration 400, shifting from co-evolution to divergence, reminiscent of a phase transition:contentReference[oaicite:16]{index=16}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/entropy-based-exploration-fa25ad",
+      "label": "entropy-based-exploration-fa25ad",
+      "schema:category": "Process",
+      "type": "sio:Process",
+      "text_span": "entropy-based principles governing structural-semantic relationships in artificial reasoning systems:contentReference[oaicite:17]{index=17}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-preflexor-model-547566",
+      "sio:hasAttribute": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/knowledge-graph-0071e4"
+      },
+      "text_span": "the reasoning-native large language model autonomously expanded and refined a knowledge graph:contentReference[oaicite:18]{index=18}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/knowledge-graph-0071e4",
+      "sio:hasPart": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-node-5a48d4"
+      },
+      "text_span": "new concepts and relationships were integrated into the graph:contentReference[oaicite:19]{index=19}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/knowledge-graph-0071e4",
+      "sio:hasPart": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-edge-597f3e"
+      },
+      "text_span": "new concepts and relationships were integrated into the graph:contentReference[oaicite:20]{index=20}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-node-5a48d4",
+      "sio:hasAttribute": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-embedding-30c14b"
+      },
+      "text_span": "node representations are within a learned embedding space:contentReference[oaicite:21]{index=21}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-edge-597f3e",
+      "sio:hasParticipant": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-node-5a48d4"
+      },
+      "text_span": "Nodes and edges emerge iteratively through recursive reasoning:contentReference[oaicite:22]{index=22}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/von-neumann-graph-entropy-8929a9",
+      "sio:depends_on": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/knowledge-graph-0071e4"
+      },
+      "text_span": "Von Neumann entropy derived from the normalized Laplacian of the graph:contentReference[oaicite:23]{index=23}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-entropy-6e2f35",
+      "sio:depends_on": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-embedding-30c14b"
+      },
+      "text_span": "Semantic entropy was calculated based on cosine similarities of node embeddings:contentReference[oaicite:24]{index=24}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/critical-discovery-parameter-713335",
+      "sio:depends_on": [
+        {
+          "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/von-neumann-graph-entropy-8929a9"
+        },
+        {
+          "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-entropy-6e2f35"
+        }
+      ],
+      "text_span": "D explicitly quantifies this balance between structural and semantic entropy:contentReference[oaicite:25]{index=25}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/cross-correlation-c5f674",
+      "sio:depends_on": [
+        {
+          "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/von-neumann-graph-entropy-8929a9"
+        },
+        {
+          "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-entropy-6e2f35"
+        }
+      ],
+      "text_span": "Cross-correlation between structural and semantic entropy reveals a critical transition:contentReference[oaicite:26]{index=26}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/betweenness-centrality-314870",
+      "sio:hasParticipant": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-node-5a48d4"
+      },
+      "text_span": "node betweenness centrality indicates that structurally important nodes connect neighbors with diverse semantic concepts:contentReference[oaicite:27]{index=27}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/semantic-neighbor-diversity-d3b4c7",
+      "sio:hasParticipant": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-node-5a48d4"
+      },
+      "text_span": "high-BC nodes tend to have neighbors that are more spread out in embedding space:contentReference[oaicite:28]{index=28}"
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/surprising-edge-48132d",
+      "owl:subClassOf": {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/self-organizing-graph-reasoning-evolves-into-a-critical-state-75de6aa8/graph-edge-597f3e"
+      },
+      "text_span": "surprising edges are edges that are structurally connected but semantically distant:contentReference[oaicite:29]{index=29}"
+    }
+  ]
+}

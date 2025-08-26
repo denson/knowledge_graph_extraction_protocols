@@ -1,0 +1,835 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "sio": "http://semanticscience.org/resource/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "schema": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/preflexor",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "PRefLexOR",
+      "schema:category": "core",
+      "text_span": "PRefLexOR (Preference-based Recursive Language Modeling for Exploratory Optimization of Reasoning), a framework that integrates preference optimization with reinforcement learning (RL) concepts for self-improving scientific reasoning:contentReference[oaicite:0]{index=0}",
+      "relations": [
+        {
+          "predicate": "sio:hasParticipant",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/preference-optimization",
+          "text_span": "integrates preference optimization with reinforcement learning (RL) concepts for self-improving scientific reasoning:contentReference[oaicite:1]{index=1}",
+          "provenance": {
+            "source": "doi:10.1038/s44387-025-00003-z",
+            "timestamp": "2025-08-23T00:00:00Z",
+            "model": "GPT-5-Thinking@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasParticipant",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/reinforcement-learning",
+          "text_span": "integrates preference optimization with reinforcement learning (RL) concepts for self-improving scientific reasoning:contentReference[oaicite:2]{index=2}",
+          "provenance": {
+            "source": "doi:10.1038/s44387-025-00003-z",
+            "timestamp": "2025-08-23T00:00:00Z",
+            "model": "GPT-5-Thinking@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasPart",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/structured-thought-integration-training",
+          "text_span": "Phase 1 focuses on structured thought integration:contentReference[oaicite:3]{index=3}",
+          "provenance": {
+            "source": "doi:10.1038/s44387-025-00003-z",
+            "timestamp": "2025-08-23T00:00:00Z",
+            "model": "GPT-5-Thinking@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasPart",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/independent-reasoning-development",
+          "text_span": "Phase 2 develops independent reasoning capabilities:contentReference[oaicite:4]{index=4}",
+          "provenance": {
+            "source": "doi:10.1038/s44387-025-00003-z",
+            "timestamp": "2025-08-23T00:00:00Z",
+            "model": "GPT-5-Thinking@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasPart",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/recursive-reasoning-algorithm",
+          "text_span": "recursive reasoning algorithm:contentReference[oaicite:5]{index=5}",
+          "provenance": {
+            "source": "doi:10.1038/s44387-025-00003-z",
+            "timestamp": "2025-08-23T00:00:00Z",
+            "model": "GPT-5-Thinking@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasPart",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/base-model-pretraining",
+          "text_span": "base model pre-training/incipient fine-tuning:contentReference[oaicite:6]{index=6}",
+          "provenance": {
+            "source": "doi:10.1038/s44387-025-00003-z",
+            "timestamp": "2025-08-23T00:00:00Z",
+            "model": "GPT-5-Thinking@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasPart",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/multi-agent-self-improvement",
+          "text_span": "leveraging multi-agent self-improvement for enhanced reasoning depth:contentReference[oaicite:7]{index=7}",
+          "provenance": {
+            "source": "doi:10.1038/s44387-025-00003-z",
+            "timestamp": "2025-08-23T00:00:00Z",
+            "model": "GPT-5-Thinking@2025-08"
+          }
+        }
+      ],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/preference-optimization",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Preference optimization",
+      "schema:category": "core",
+      "text_span": "Preference optimization enhances performance via rejection sampling, masking reasoning steps to focus on discovery:contentReference[oaicite:8]{index=8}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/recursive-reasoning",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Recursive reasoning",
+      "schema:category": "core",
+      "text_span": "combines preference optimization with recursive reasoning inspired by Reinforcement Learning (RL) principles:contentReference[oaicite:9]{index=9}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/reinforcement-learning",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Reinforcement learning",
+      "schema:category": "core",
+      "text_span": "a framework that integrates preference optimization with reinforcement learning (RL) concepts for self-improving scientific reasoning:contentReference[oaicite:10]{index=10}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/dynamic-knowledge-graph",
+      "@type": [
+        "sio:Data"
+      ],
+      "rdfs:label": "Dynamic knowledge graph",
+      "schema:category": "core",
+      "text_span": "A dynamic knowledge graph contextualizes reasoning with retrieval-augmented data:contentReference[oaicite:11]{index=11}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/rejection-sampling",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Rejection sampling",
+      "schema:category": "core",
+      "text_span": "Preference optimization enhances performance via rejection sampling, masking reasoning steps to focus on discovery:contentReference[oaicite:12]{index=12}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/masking-of-reasoning-steps",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Masking of reasoning steps",
+      "schema:category": "core",
+      "text_span": "Preference optimization enhances performance via rejection sampling, masking reasoning steps to focus on discovery:contentReference[oaicite:13]{index=13}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/active-learning",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Active learning",
+      "schema:category": "core",
+      "text_span": "The dynamic task generation in PRefLexOR introduces an active learning component wherein the model generates tasks, reasoning steps, and negative examples on the fly during training:contentReference[oaicite:14]{index=14}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/orpo-odds-ratio-preference-optimization",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Odds Ratio Preference Optimization (ORPO)",
+      "schema:category": "core",
+      "text_span": "initial alignment phase achieved using ORPO, which ensures that the model consistently aligns its reasoning with desired outcomes by directly optimizing preference odds:contentReference[oaicite:15]{index=15}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/exo-efficient-exact-optimization",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Efficient Exact Optimization (EXO)",
+      "schema:category": "core",
+      "text_span": "Efficient Exact Optimization (EXO) is a mode-seeking preference alignment approach that focuses on optimizing a model’s final answers while masking intermediate reasoning (thinking tokens):contentReference[oaicite:16]{index=16}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/structured-thought-integration-training",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Structured thought integration training",
+      "schema:category": "core",
+      "text_span": "Phase 1 focuses on structured thought integration, with on-the-fly dataset generation as input:contentReference[oaicite:17]{index=17}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/independent-reasoning-development",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Independent reasoning development",
+      "schema:category": "core",
+      "text_span": "Phase 2 develops independent reasoning capabilities by first generating a dataset, applying masking, and then proceeding with training:contentReference[oaicite:18]{index=18}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/base-model-pretraining",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Base model pre-training",
+      "schema:category": "core",
+      "text_span": "base model pre-training/incipient fine-tuning:contentReference[oaicite:19]{index=19}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/recursive-reasoning-algorithm",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Recursive reasoning algorithm",
+      "schema:category": "core",
+      "text_span": "PRefLexOR recursive reasoning algorithm: an iterative approach leveraging a fine-tuned reasoning model and a general-purpose critic model to generate, refine, and optionally integrate responses:contentReference[oaicite:20]{index=20}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/thinking-phase",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Thinking phase",
+      "schema:category": "core",
+      "text_span": "the process begins with the <|thinking|> phase, where key reasoning steps are identified. This phase involves: (i) outlining reasoning steps..., (ii) referencing relevant materials... (iii) forming hypotheses:contentReference[oaicite:21]{index=21}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/reflection-phase",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Reflection phase",
+      "schema:category": "core",
+      "text_span": "After the initial thinking process, the system moves to the <|reflection|> phase, where the generated answer is refined with improvements and corrections to ensure accuracy:contentReference[oaicite:22]{index=22}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/answer-generation-process",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Answer generation process",
+      "schema:category": "core",
+      "text_span": "Structured thought and reflection in answer generation. This diagram illustrates the multi-step process of answer generation, incorporating both structured thinking and reflection phases:contentReference[oaicite:23]{index=23}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/critic-model",
+      "@type": [
+        "sio:Software"
+      ],
+      "rdfs:label": "Critic model",
+      "schema:category": "core",
+      "text_span": "an iterative approach leveraging a fine-tuned reasoning model and a general-purpose critic model to generate, refine, and optionally integrate responses:contentReference[oaicite:24]{index=24}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/fine-tuned-reasoning-model",
+      "@type": [
+        "sio:Software"
+      ],
+      "rdfs:label": "Fine-tuned reasoning model",
+      "schema:category": "core",
+      "text_span": "an iterative approach leveraging a fine-tuned reasoning model and a general-purpose critic model to generate, refine, and optionally integrate responses:contentReference[oaicite:25]{index=25}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/multi-agent-self-improvement",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Multi-agent self-improvement",
+      "schema:category": "core",
+      "text_span": "leveraging multi-agent self-improvement for enhanced reasoning depth and cross-domain adaptability:contentReference[oaicite:26]{index=26}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/collaborative-agents",
+      "@type": [
+        "sio:Software"
+      ],
+      "rdfs:label": "Collaborative agents",
+      "schema:category": "core",
+      "text_span": "a singularly focused Reasoning Model was replaced with a set of Collaborative Agents that have developed particular capabilities to examine logical steps towards solving a problem:contentReference[oaicite:27]{index=27}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/interdisciplinary-knowledge-base-model",
+      "@type": [
+        "sio:Software"
+      ],
+      "rdfs:label": "Interdisciplinary Knowledge Base Model",
+      "schema:category": "core",
+      "text_span": "the Critic [model] with an Interdisciplinary Knowledge Base Model that transcends across boundaries of fields:contentReference[oaicite:28]{index=28}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/symbolic-representation",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Symbolic representation",
+      "schema:category": "core",
+      "text_span": "The algorithm incorporates symbolic representation, interdisciplinary synthesis, and collaborative refinement to enhance its reasoning capabilities:contentReference[oaicite:29]{index=29}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/interdisciplinary-synthesis",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Interdisciplinary synthesis",
+      "schema:category": "core",
+      "text_span": "The algorithm incorporates symbolic representation, interdisciplinary synthesis, and collaborative refinement to enhance its reasoning capabilities:contentReference[oaicite:30]{index=30}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/collaborative-refinement",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Collaborative refinement",
+      "schema:category": "core",
+      "text_span": "The algorithm incorporates symbolic representation, interdisciplinary synthesis, and collaborative refinement to enhance its reasoning capabilities:contentReference[oaicite:31]{index=31}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/hierarchical-structures",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Hierarchical structures",
+      "schema:category": "core",
+      "text_span": "the model first dissects the concept of hierarchical structures by identifying multiple advantages, such as energy dissipation, size adaptation, and material utilization:contentReference[oaicite:32]{index=32}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/energy-dissipation",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Energy dissipation",
+      "schema:category": "core",
+      "text_span": "identifying multiple advantages, such as energy dissipation, size adaptation, and material utilization:contentReference[oaicite:33]{index=33}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/size-adaptation",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Size adaptation",
+      "schema:category": "core",
+      "text_span": "identifying multiple advantages, such as energy dissipation, size adaptation, and material utilization:contentReference[oaicite:34]{index=34}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/material-utilization",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Material utilization",
+      "schema:category": "core",
+      "text_span": "identifying multiple advantages, such as energy dissipation, size adaptation, and material utilization:contentReference[oaicite:35]{index=35}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/mechanical-strength",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Mechanical strength",
+      "schema:category": "core",
+      "text_span": "hierarchical structures work across different scales, benefiting mechanical strength, thermal insulation, and impact resistance:contentReference[oaicite:36]{index=36}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/thermal-insulation",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Thermal insulation",
+      "schema:category": "core",
+      "text_span": "hierarchical structures work across different scales, benefiting mechanical strength, thermal insulation, and impact resistance:contentReference[oaicite:37]{index=37}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/impact-resistance",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Impact resistance",
+      "schema:category": "core",
+      "text_span": "hierarchical structures work across different scales, benefiting mechanical strength, thermal insulation, and impact resistance:contentReference[oaicite:38]{index=38}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/nacre",
+      "@type": [
+        "sio:Material"
+      ],
+      "rdfs:label": "Nacre",
+      "schema:category": "core",
+      "text_span": "notably using examples like nacre:contentReference[oaicite:39]{index=39}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/aragonite-tablets",
+      "@type": [
+        "sio:Material"
+      ],
+      "rdfs:label": "Aragonite tablets",
+      "schema:category": "core",
+      "text_span": "general principles and specific examples (e.g., aragonite tablets in nacre):contentReference[oaicite:40]{index=40}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/viscoelasticity",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Viscoelasticity",
+      "schema:category": "core",
+      "text_span": "concepts such as viscoelasticity, crack bridging, and fiber sliding, among others, which contribute to energy dissipation and gradual failure:contentReference[oaicite:41]{index=41}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/crack-bridging",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Crack bridging",
+      "schema:category": "core",
+      "text_span": "concepts such as viscoelasticity, crack bridging, and fiber sliding, among others, which contribute to energy dissipation and gradual failure:contentReference[oaicite:42]{index=42}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/crack-propagation",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Crack propagation",
+      "schema:category": "core",
+      "text_span": "principles, such as viscoelasticity, crack propagation, and hierarchical structures:contentReference[oaicite:43]{index=43}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/fiber-sliding",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Fiber sliding",
+      "schema:category": "core",
+      "text_span": "concepts such as viscoelasticity, crack bridging, and fiber sliding, among others, which contribute to energy dissipation and gradual failure:contentReference[oaicite:44]{index=44}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/stress-redistribution",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Stress redistribution",
+      "schema:category": "core",
+      "text_span": "concepts such as viscoelasticity, crack bridging, and fiber sliding, among others, which contribute to energy dissipation and gradual failure:contentReference[oaicite:45]{index=45}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/graceful-failure",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Graceful failure",
+      "schema:category": "core",
+      "text_span": "gracefully due to a combination of hierarchical structures and periodic hierarchies that operate at multiple scales:contentReference[oaicite:46]{index=46}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/bone",
+      "@type": [
+        "sio:Material"
+      ],
+      "rdfs:label": "Bone",
+      "schema:category": "core",
+      "text_span": "principles such as viscoelasticity, crack propagation, and hierarchical structures. The assistant shows the ability to connect abstract concepts with practical examples (e.g., bone and nacre):contentReference[oaicite:47]{index=47}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/periodic-hierarchies",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Periodic hierarchies",
+      "schema:category": "core",
+      "text_span": "hierarchical structures and periodic hierarchies that operate at multiple scales, from the molecular to the macroscopic level:contentReference[oaicite:48]{index=48}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/thinking-tokens",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Thinking tokens",
+      "schema:category": "core",
+      "text_span": "The algorithm relies on extracting thinking processes (indicated via <|thinking|> ... ):contentReference[oaicite:49]{index=49}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/reflection-tokens",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Reflection tokens",
+      "schema:category": "core",
+      "text_span": "The algorithm relies on extracting reflection processes (indicated via <|reflect|> ... ):contentReference[oaicite:50]{index=50}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/bioinspired-neural-networks",
+      "@type": [
+        "sio:Software"
+      ],
+      "rdfs:label": "Bio-inspired neural networks",
+      "schema:category": "core",
+      "text_span": "using reinforcement learning (RL) principles, the discovery of principles or the solution of specific tasks is further inspired by biological paradigms, using bio-inspired neural network designs:contentReference[oaicite:51]{index=51}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/retrievalaugmented-generation",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Retrieval-Augmented Generation (RAG)",
+      "schema:category": "core",
+      "text_span": "we employ Retrieval-Augmented Generation (RAG), which queries the entire corpus, retrieving and integrating contextually relevant information from multiple sources:contentReference[oaicite:52]{index=52}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/computing-resources",
+      "@type": [
+        "sio:Hardware"
+      ],
+      "rdfs:label": "Computing resources",
+      "schema:category": "core",
+      "text_span": "Each phase can be scaled independently with additional computing to improve performance:contentReference[oaicite:53]{index=53}",
+      "relations": [],
+      "provenance": {
+        "source": "doi:10.1038/s44387-025-00003-z",
+        "timestamp": "2025-08-23T00:00:00Z",
+        "model": "GPT-5-Thinking@2025-08"
+      }
+    }
+  ],
+  "axioms_local": {
+    "classes": [
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/thinking-section-class",
+        "@type": [
+          "owl:Class",
+          "sio:Process"
+        ],
+        "rdfs:label": "Thinking Section",
+        "subClassOf": [
+          "sio:Process"
+        ],
+        "restrictions": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/reflection-phase-class",
+        "@type": [
+          "owl:Class",
+          "sio:Process"
+        ],
+        "rdfs:label": "Reflection Phase",
+        "subClassOf": [
+          "sio:Process"
+        ],
+        "restrictions": []
+      },
+      {
+        "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/preflexor-paper/preference-optimization-class",
+        "@type": [
+          "owl:Class",
+          "sio:Process"
+        ],
+        "rdfs:label": "Preference Optimization",
+        "subClassOf": [
+          "sio:Process"
+        ],
+        "restrictions": []
+      }
+    ],
+    "properties": []
+  },
+  "axioms_inferred": {},
+  "natural_language_summary": "The graph centers on the **PRefLexOR** framework (Preference-based Recursive Language Modeling), linking it to its key components and processes. PRefLexOR integrates *Preference Optimization* (defined as a process class) with reinforcement learning, recursively refining its reasoning:contentReference[oaicite:54]{index=54}. Training occurs in phases: a **Structured Thought Integration** phase and an **Independent Reasoning Development** phase (and an initial base-model pre-training):contentReference[oaicite:55]{index=55}:contentReference[oaicite:56]{index=56}. The *Recursive Reasoning Algorithm* node captures the iterative loop of generating initial answers, extracting reflections, improving the thinking process, and regenerating improved answers:contentReference[oaicite:57]{index=57}. Answer generation is modeled as a process with a *Thinking phase* (outlining steps, referencing materials, formulating hypotheses) and a *Reflection phase* (refining the answer):contentReference[oaicite:58]{index=58}:contentReference[oaicite:59]{index=59}. A **Dynamic Knowledge Graph** node represents retrieval-augmented data contextualizing the reasoning:contentReference[oaicite:60]{index=60}. Material science inference examples produce nodes like *Hierarchical structures* (advantages: energy dissipation, size adaptation, material utilization) with examples (e.g., nacre, aragonite):contentReference[oaicite:61]{index=61}; physical mechanisms such as *viscoelasticity*, *crack bridging/sliding*, and *stress redistribution* in biological materials:contentReference[oaicite:62]{index=62}; and *Periodic hierarchies* (multi-scale structures) related to graceful failure:contentReference[oaicite:63]{index=63}. Diagram-based concepts are also included: *Collaborative agents*, an *Interdisciplinary Knowledge Base Model*, *Symbolic representation*, *Interdisciplinary synthesis*, and *Collaborative refinement* (from Fig. 11):contentReference[oaicite:64]{index=64}. OWL axioms define the classes **Thinking Section**, **Reflection Phase**, and **Preference Optimization** as subclasses of sio:Process. Nodes are connected by relations (e.g., `sio:hasPart`, `sio:hasParticipant`); for example, PRefLexOR hasPart Preference Optimization and hasPart Recursive Reasoning Algorithm. Overall, the graph comprehensively captures PRefLexOR’s structure, algorithms, and the scientific concepts it uses."
+}

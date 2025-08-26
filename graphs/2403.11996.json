@@ -1,0 +1,630 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "sio": "http://semanticscience.org/resource/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "schema": "http://schema.org/"
+  },
+  "base_uri": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/",
+  "natural_language_summary": "This work uses generative AI to transform a dataset of 1,000 scientific papers into a rich knowledge graph. Structural analysis of the graph (node degrees, communities, clustering, betweenness) shows it is scale-free and highly connected. Graph reasoning on this representation reveals interdisciplinary relationships and enables novel predictions: for example, the AI system identified an analogy between biological materials and Beethoven\u2019s Ninth Symphony, and proposed a new hierarchical mycelium-based composite material inspired by Kandinsky\u2019s Composition VII painting. Overall, the graph-based generative AI approach achieves much higher novelty and detail than conventional methods, establishing a framework for innovation by uncovering hidden connections.",
+  "@graph": [
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/generative-artificial-intelligence",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Generative AI",
+      "schema:category": "core",
+      "text_span": "Leveraging generative Artificial Intelligence (AI)",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/scientific-paper-dataset-1000",
+      "@type": [
+        "sio:Dataset"
+      ],
+      "rdfs:label": "Scientific papers dataset (1000)",
+      "schema:category": "core",
+      "text_span": "a dataset comprising 1,000 scientific papers",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      },
+      "relations": [
+        {
+          "predicate": "sio:hasOutput",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/ontological-knowledge-graph",
+          "text_span": "transformed a dataset comprising 1,000 scientific papers into an ontological knowledge graph",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/ontological-knowledge-graph",
+      "@type": [
+        "sio:DataRepresentation"
+      ],
+      "rdfs:label": "Ontological knowledge graph",
+      "schema:category": "core",
+      "text_span": "an ontological knowledge graph",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      },
+      "relations": [
+        {
+          "predicate": "sio:hasAttribute",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/scale-free-nature",
+          "text_span": "scale-free nature",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasAttribute",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/highly-connected",
+          "text_span": "highly connected",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/structural-analysis",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Structural analysis",
+      "schema:category": "core",
+      "text_span": "in-depth structural analysis",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/node-degree",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Node degree",
+      "schema:category": "core",
+      "text_span": "calculated node degrees",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/community-detection",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Community detection",
+      "schema:category": "core",
+      "text_span": "identified communities",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/connectivity",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Graph connectivity",
+      "schema:category": "core",
+      "text_span": "connectivities",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/clustering-coefficient",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Clustering coefficient",
+      "schema:category": "core",
+      "text_span": "clustering coefficients",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/betweenness-centrality",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Betweenness centrality",
+      "schema:category": "core",
+      "text_span": "betweenness centrality",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/scale-free-nature",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Scale-free nature",
+      "schema:category": "core",
+      "text_span": "inherently scale-free nature",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/highly-connected",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "High connectivity",
+      "schema:category": "core",
+      "text_span": "highly connected",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/graph-reasoning",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Graph reasoning",
+      "schema:category": "core",
+      "text_span": "graph reasoning",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      },
+      "relations": [
+        {
+          "predicate": "sio:hasOutput",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/hidden-connections",
+          "text_span": "revealing hidden connections",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasOutput",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/gap-in-knowledge",
+          "text_span": "identify gaps in knowledge",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasOutput",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/material-design",
+          "text_span": "propose never-before-seen material designs",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        },
+        {
+          "predicate": "sio:hasOutput",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/material-behavior",
+          "text_span": "predict material behaviors",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/isomorphic-property",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Isomorphic property",
+      "schema:category": "core",
+      "text_span": "isomorphic properties",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/interdisciplinary-relationship",
+      "@type": [
+        "sio:Relationship"
+      ],
+      "rdfs:label": "Interdisciplinary relationship",
+      "schema:category": "core",
+      "text_span": "interdisciplinary relationships",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/gap-in-knowledge",
+      "@type": [
+        "sio:Quality"
+      ],
+      "rdfs:label": "Gap in knowledge",
+      "schema:category": "core",
+      "text_span": "gaps in knowledge",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/material-design",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Material design",
+      "schema:category": "core",
+      "text_span": "material designs",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/material-behavior",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Material behavior",
+      "schema:category": "core",
+      "text_span": "material behaviors",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/deep-node-embedding",
+      "@type": [
+        "sio:DataRepresentation"
+      ],
+      "rdfs:label": "Deep node embedding",
+      "schema:category": "core",
+      "text_span": "deep node embeddings",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/node-similarity-ranking",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Node similarity ranking",
+      "schema:category": "core",
+      "text_span": "combinatorial node similarity ranking",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/path-sampling-strategy",
+      "@type": [
+        "sio:Method"
+      ],
+      "rdfs:label": "Path sampling strategy",
+      "schema:category": "core",
+      "text_span": "path sampling strategy",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/biological-material",
+      "@type": [
+        "sio:Material"
+      ],
+      "rdfs:label": "Biological material",
+      "schema:category": "core",
+      "text_span": "biological materials",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/beethoven-symphony-no-9",
+      "@type": [
+        "sio:InformationContentEntity"
+      ],
+      "rdfs:label": "Beethoven\u2019s 9th Symphony",
+      "schema:category": "core",
+      "text_span": "Beethoven\u2019s 9th Symphony",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/isomorphic-mapping",
+      "@type": [
+        "sio:Process"
+      ],
+      "rdfs:label": "Isomorphic mapping",
+      "schema:category": "core",
+      "text_span": "isomorphic mapping",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/hierarchical-mycelium-based-composite",
+      "@type": [
+        "sio:Material"
+      ],
+      "rdfs:label": "Hierarchical mycelium-based composite",
+      "schema:category": "core",
+      "text_span": "hierarchical mycelium-based composite",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      },
+      "relations": [
+        {
+          "predicate": "sio:hasInput",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/kandinsky-composition-vii",
+          "text_span": "based on Kandinsky's 'Composition VII' painting",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/kandinsky-composition-vii",
+      "@type": [
+        "sio:InformationContentEntity"
+      ],
+      "rdfs:label": "Kandinsky\u2019s Composition VII",
+      "schema:category": "core",
+      "text_span": "Kandinsky's 'Composition VII' painting",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/porosity",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Porosity",
+      "schema:category": "core",
+      "text_span": "adjustable porosity",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/mechanical-strength",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Mechanical strength",
+      "schema:category": "core",
+      "text_span": "mechanical strength",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/chemical-functionalization",
+      "@type": [
+        "sio:Attribute"
+      ],
+      "rdfs:label": "Chemical functionalization",
+      "schema:category": "core",
+      "text_span": "complex patterned chemical functionalization",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/graph-generative-ai",
+      "@type": [
+        "sio:Software"
+      ],
+      "rdfs:label": "Graph-based generative AI",
+      "schema:category": "core",
+      "text_span": "Graph-based generative AI",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      },
+      "relations": [
+        {
+          "predicate": "sio:hasOutput",
+          "object": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/hierarchical-mycelium-based-composite",
+          "text_span": "suggested a new mycelium-based composite",
+          "provenance": {
+            "source": "doi:10.48550/arXiv.2403.11996",
+            "timestamp": "2025-08-23T13:32:33Z",
+            "model": "GPT-4-DeepResearch@2025-08"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/novelty",
+      "@type": [
+        "sio:Quality"
+      ],
+      "rdfs:label": "Novelty (of approach)",
+      "schema:category": "core",
+      "text_span": "higher degree of novelty",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/explorative-capacity",
+      "@type": [
+        "sio:Quality"
+      ],
+      "rdfs:label": "Explorative capacity",
+      "schema:category": "core",
+      "text_span": "explorative capacity",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/technical-detail",
+      "@type": [
+        "sio:Quality"
+      ],
+      "rdfs:label": "Technical detail",
+      "schema:category": "core",
+      "text_span": "technical detail",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/framework-for-innovation",
+      "@type": [
+        "sio:Concept"
+      ],
+      "rdfs:label": "Framework for innovation",
+      "schema:category": "core",
+      "text_span": "framework for innovation",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/hidden-connections",
+      "@type": [
+        "sio:Relationship"
+      ],
+      "rdfs:label": "Hidden connections",
+      "schema:category": "core",
+      "text_span": "hidden connections",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/category-theory",
+      "@type": [
+        "sio:InformationContentEntity"
+      ],
+      "rdfs:label": "Category theory",
+      "schema:category": "core",
+      "text_span": "category theory",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    },
+    {
+      "@id": "https://knowledgecrystal.com/kg/rs-foundation-models/accelerating-scientific-discovery/knowledge-map",
+      "@type": [
+        "sio:DataRepresentation"
+      ],
+      "rdfs:label": "Knowledge map",
+      "schema:category": "core",
+      "text_span": "knowledge map",
+      "provenance": {
+        "source": "doi:10.48550/arXiv.2403.11996",
+        "timestamp": "2025-08-23T13:32:33Z",
+        "model": "GPT-4-DeepResearch@2025-08"
+      }
+    }
+  ],
+  "axioms_local": {
+    "classes": [],
+    "properties": []
+  },
+  "axioms_inferred": {
+    "classes": [],
+    "properties": []
+  }
+}
